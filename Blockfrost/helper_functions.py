@@ -32,3 +32,7 @@ def unix_to_time(df):
     df['time'] = df['time'].astype(int)
     df['time'] = pd.to_datetime(df['block_time'], unit='s')
     return df
+
+def asciitoken_name(asset_name):
+    ascii_name = bytearray.fromhex(asset_name).decode()
+    return ascii_name
