@@ -1,0 +1,17 @@
+import koios_python
+import pandas as pd
+from collections import defaultdict
+from datetime import datetime
+
+kp_mainnet = koios_python.URLs(url="http://10.0.0.89:8053/api/v1/")
+
+TOKEN_POLICY_ID = "da8c30857834c6ae7203935b89278c532b3995245295456f993e1d24"
+TOKEN_ASSET_NAME = "4c51"
+LQ_USER_DIST_WALLET = "addr1xxawr298yy36qrqw6yqc9v2qvgfddwjpqkgnfkt2rvq3u3f74zdzpgetwrygga9mlz44dc5tfrd82m0vxpfjmkpsf9ts06jfwd"
+LQ_STAKING_WALLET_1 = "addr1xx0cj23c0mhfht6uj74x6ytr6c3jr3gnxd3tthdemcxdulrw7xjpplgp0lahw2u869nn77avyd3vw96p4jhtdrykyt4safjps8"
+LQ_STAKING_WALLET_2 = "addr1x8q76ctyve23u8h5sux3npxwwlnedpxlz3ft89vlshhs5val9ytme40nlqwch8gxnrsk3cvt69qn8xuqsd2fuv7fgghqjct4kw"
+SUNDAE_LQ_REWARD_WALLET = "addr1q9clfpceddhyejpxkr0jllp04spldxpsucge5nwk6pjx4z7hy3954pmhklwxjz05vsx0qt4yw4a9275eldyrkp0c0hlqtpqx6e"
+
+asset_address = kp_mainnet.get_policy_asset_addresses(TOKEN_POLICY_ID)
+df_asset_address = pd.json_normalize(asset_address)
+print(df_asset_address.head(10))

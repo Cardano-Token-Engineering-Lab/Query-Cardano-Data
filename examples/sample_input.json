@@ -1,0 +1,12 @@
+{
+  "description": "Example input to cardano_token_framework: pull LQ token swap activity at the Minswap ADA/LQ pool address over a one-month window.",
+  "source": "blockfrost",
+  "policy_id": "da8c30857834c6ae7203935b89278c532b3995245295456f993e1d24",
+  "asset_name": "4c51",
+  "dex_addresses": [
+    "addr1zxn9efv2f6w82hagxqtn62ju4m293tqvw0uhmdl64ch8uw6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq6s3z70"
+  ],
+  "start": "2024-01-01",
+  "end": "2024-02-01",
+  "equivalent_cli_command": "python -m cardano_token_framework --source blockfrost --policy-id da8c30857834c6ae7203935b89278c532b3995245295456f993e1d24 --asset-name 4c51 --output examples/sample_output_swaps.csv swaps --dex-address addr1zxn9efv2f6w82hagxqtn62ju4m293tqvw0uhmdl64ch8uw6j2c79gy9l76sdg0xwhd7r0c0kna0tycz4y5s6mlenh8pq6s3z70 --start 2024-01-01 --end 2024-02-01"
+}

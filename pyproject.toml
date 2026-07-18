@@ -1,0 +1,56 @@
+[project]
+name = "cardano-token-framework"
+version = "0.1.0"
+description = "Source-agnostic framework for pulling Cardano native-token on-chain data for systems modeling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "blockfrost-python>=0.5.3",
+    "koios-api>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pytest-mock>=3.12",
+    "responses>=0.25",
+    "ruff>=0.6",
+    "cadCAD>=0.5",
+    "matplotlib>=3.7",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+cardano-token-framework = "cardano_token_framework.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["cardano_token_framework*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["legacy", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cardano_token_framework"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=cardano_token_framework --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["cardano_token_framework"]
+omit = ["cardano_token_framework/__main__.py"]

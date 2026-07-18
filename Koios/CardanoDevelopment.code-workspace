@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "CardanoDevelopment",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter"
+		}
+	}
+}

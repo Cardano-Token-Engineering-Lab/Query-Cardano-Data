@@ -3,16 +3,15 @@ import pandas as pd
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 import os
+from dotenv import load_dotenv
 
 
 def read_csv(filepath):
     df = pd.read_csv(filepath)
     return df
 
-
 def write_csv(df, file_path):
     df.to_csv(file_path, index=False)
-
 
 def create_info_xlsx(dataframes_dict, output_filename):
     workbook = Workbook()
@@ -20,23 +19,19 @@ def create_info_xlsx(dataframes_dict, output_filename):
         sheet = workbook.create_sheet(title=sheet_name)
         for row in dataframe_to_rows(df, index=False, header=True):
             sheet.append(row)
-    workbook.remove(workbook["Sheet"])
+    workbook.remove(workbook['Sheet'])
     workbook.save(output_filename)
 
-
 def get_api_token():
-    api = BlockFrostApi(
-        project_id=None, base_url="http://10.0.0.89:3000", api_version=None
-    )
-    api.api_version = None
+    load_dotenv()
+    api_key = os.getenv("BLOCKFROST_API_TOKEN")
+    api = BlockFrostApi(project_id=api_key)
     return api
 
-
 def unix_to_time(df):
-    df["time"] = df["time"].astype(int)
-    df["time"] = pd.to_datetime(df["block_time"], unit="s")
+    df['time'] = df['time'].astype(int)
+    df['time'] = pd.to_datetime(df['block_time'], unit='s')
     return df
-
 
 def asciitoken_name(asset_name):
     ascii_name = bytearray.fromhex(asset_name).decode()

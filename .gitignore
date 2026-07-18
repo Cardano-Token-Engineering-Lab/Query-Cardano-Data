@@ -1,6 +1,9 @@
 *.env
 *.xlsx
 *.csv
+# ...except the example output file, which is a tracked deliverable, not
+# generated scratch data:
+!examples/*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -146,6 +149,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.ruff_cache/
 
 # Pyre type checker
 .pyre/

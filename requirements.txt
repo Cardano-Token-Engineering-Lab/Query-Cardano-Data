@@ -1,0 +1,9 @@
+# Core runtime dependencies. Prefer `pip install -e ".[dev]"` (see README/
+# CONTRIBUTING) which installs these plus the dev/test tooling from
+# pyproject.toml in one step — this file is kept for anyone who specifically
+# wants `pip install -r requirements.txt` without an editable install.
+pandas>=2.0
+python-dotenv>=1.0
+requests>=2.31
+blockfrost-python>=0.5.3
+koios-api>=1.0
