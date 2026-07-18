@@ -3,7 +3,7 @@
 A small Python framework for pulling Cardano native-token on-chain data —
 asset metadata, holders, transactions, and basic swap activity — into
 `pandas` DataFrames, ready to feed into systems models (e.g.
-[cadCAD](https://cadcad.org/)). Built for Project Catalyst Milestone 2:
+[cadCAD](https://cadcad.org/)). Built for Project Catalyst Milestone 3:
 *"Code Framework for Modeling Data Acquisition."*
 
 It supports **any Cardano native token** — pass in a policy ID (and asset
