@@ -1,6 +1,7 @@
 *.env
 *.xlsx
 *.csv
+*.bundle
 # ...except the example output file, which is a tracked deliverable, not
 # generated scratch data:
 !examples/*.csv

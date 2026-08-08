@@ -1,11 +1,11 @@
 # Project Progress — Code Framework for Modeling Data Acquisition
 
-This page tracks progress and evidence for Milestone 2. It is the
+This page tracks progress and evidence for Milestone 3, the final milestone. It is the
 repo-resident copy of the page that should also be published on the
-project's public site/Catalyst page (see "Publishing this page" below) —
-the milestone's acceptance criteria require a public progress page in
-addition to repo documentation, and this file is meant to be the single
-source of truth that page is generated/copied from.
+project's public site/Catalyst page — the milestone's acceptance criteria
+require a public progress page in addition to repo documentation, and this
+file is meant to be the single source of truth that page is generated/copied
+from.
 
 ## Status: Complete, pending review
 
@@ -28,7 +28,6 @@ source of truth that page is generated/copied from.
 | Code review / assurance process | Done | `CODE_REVIEW.md` |
 | Example token model using framework output (cadCAD) | Done | `examples/cadcad_basic_model.py` |
 | Feedback loops | Done | GitHub Issues/templates + see "Feedback channels" below |
-| Public progress page | **Action needed** | Publish this file's content — see below |
 
 ## What this milestone delivers
 
@@ -73,25 +72,5 @@ for any Cardano native token.
 
 - **GitHub Issues** on this repo — bug reports and feature requests use the
   templates in `.github/ISSUE_TEMPLATE/`.
-- **Social media** — [add the Cardano Token Engineering Lab's
-  Twitter/X / Discord link(s) here once finalized for this milestone].
-- **Website feedback form** — [add the form URL here once published].
-
-> Maintainer note: the two bracketed items above need real links before this
-> page is published externally — they're placeholders because the actual
-> social/website properties weren't provided as part of this milestone's
-> source material.
-
-## Publishing this page
-
-The milestone requires the progress page to be visible somewhere beyond the
-repo itself. Two low-effort options:
-
-1. **GitHub Pages**: enable Pages for this repo (Settings → Pages → deploy
-   from `main` / root or `/docs`), which will render this file directly.
-2. **Mirror to the existing project website**: copy the "Status" table and
-   "Known limitations" section above into the site whenever they change, and
-   link back here for full detail.
-
-Either way, update this file first — it's the source of truth — then sync
-the public page from it.
+- **Social media** — [Cardano Token Lab X Account](https://x.com/CardanoTokenLab).
+- **Website feedback form** — [The Token Lab](https://thetokenlab.xyz).

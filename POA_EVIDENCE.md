@@ -129,8 +129,8 @@ This confirms [`examples/cadcad_basic_model.py`](../examples/cadcad_basic_model.
 
 **Evidence:**
 - **GitHub:** [Issues tab](https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/issues), with structured templates at [`.github/ISSUE_TEMPLATE/bug_report.md`](../.github/ISSUE_TEMPLATE/bug_report.md) and [`.github/ISSUE_TEMPLATE/feature_request.md`](../.github/ISSUE_TEMPLATE/feature_request.md)
-- **Social media:** [INSERT LIVE LINK — Twitter/X, Discord, etc.]
-- **Website feedback form:** [INSERT LIVE LINK]
+- **Social media** — [Cardano Token Lab X Account](https://x.com/CardanoTokenLab).
+- **Website feedback form** — [The Token Lab](https://thetokenlab.xyz).
 
 ---
 
@@ -138,7 +138,7 @@ This confirms [`examples/cadcad_basic_model.py`](../examples/cadcad_basic_model.
 
 **Criterion:** project progress managed and showcased on a page highlighting progress and evidence.
 
-**Evidence:** [`PROGRESS.md`](../PROGRESS.md) — requirement-by-requirement status table, known limitations stated explicitly, and a "Publishing this page" section covering how it's made externally visible (GitHub Pages or mirrored to the project website).
+**Evidence:** [`PROGRESS.md`](../PROGRESS.md) — requirement-by-requirement status table and known limitations stated explicitly.
 
 ---
 
