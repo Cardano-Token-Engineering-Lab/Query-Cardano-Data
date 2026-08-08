@@ -28,6 +28,7 @@ from.
 | Code review / assurance process | Done | `CODE_REVIEW.md` |
 | Example token model using framework output (cadCAD) | Done | `examples/cadcad_basic_model.py` |
 | Feedback loops | Done | GitHub Issues/templates + see "Feedback channels" below |
+| Public Progress Page | Done | [Catalyst Fund 11 Proposal Activity Tracker](https://thetokenlab.xyz/catalyst-fund-11-proposal-activity-tracker/) |
 
 ## What this milestone delivers
 
@@ -65,7 +66,7 @@ for any Cardano native token.
   `ruff check` and the full `pytest` suite (with coverage) across Python
   3.10-3.12.
 - Process: see `CODE_REVIEW.md`.
-- Latest coverage: 100% (`cardano_token_framework/`), 49 tests, 0 lint errors
+- Latest coverage: 100% (`cardano_token_framework/`), 51 tests, 0 lint errors
   at the time of this milestone submission.
 
 ## Feedback channels
@@ -73,4 +74,4 @@ for any Cardano native token.
 - **GitHub Issues** on this repo — bug reports and feature requests use the
   templates in `.github/ISSUE_TEMPLATE/`.
 - **Social media** — [Cardano Token Lab X Account](https://x.com/CardanoTokenLab).
-- **Website feedback form** — [The Token Lab](https://thetokenlab.xyz).
+- **Website feedback form** — [The Token Lab](https://thetokenlab.xyz/contact).

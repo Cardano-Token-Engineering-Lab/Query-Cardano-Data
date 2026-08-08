@@ -3,7 +3,7 @@
 **Project:** Cardano Token Engineering Lab — Code Framework for Modeling Data Acquisition
 **Milestone:** Final Milestone
 **Repo:** https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data
-**Evidence captured:** run locally against commit `0d73c96` on `main`, reproducible by any reviewer via the commands shown below.
+**Evidence captured:** run locally against commit `0d73c96` on branch `feat/poa-evidence-fixes` ([PR #1](https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/pull/1)); re-point to the merge commit on `main` once this PR is merged. Reproducible by any reviewer via the commands shown below.
 
 This document exists because the prior PoA submission linked to files that *implement* each acceptance criterion without showing that they actually *pass*. Every section below pairs the criterion with a command a reviewer can re-run themselves, plus the literal output captured when we ran it.
 
@@ -88,7 +88,7 @@ TOTAL                                                     288      0   100%
 
 **Evidence this process is actually followed:**
 - **PR template** in use: [`.github/pull_request_template.md`](../.github/pull_request_template.md)
-- **Live PR history:** [link to a merged, reviewed PR — see note below]
+- **Live PR history:** [Github PR History](https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/pull/1)
 
 > **Reviewer note:** prior commits on this repo were pushed directly to `main` without going through a reviewed PR, which is almost certainly why this criterion was flagged as unclear in the last review. Going forward, changes are being made via PR — see the linked PR above for a real, reviewed example. Anthropic/Claude-drafted content in this repo's history has been reviewed and approved by the project maintainer before merge; that review step is now happening in-PR rather than out-of-band.
 
@@ -130,7 +130,8 @@ This confirms [`examples/cadcad_basic_model.py`](../examples/cadcad_basic_model.
 **Evidence:**
 - **GitHub:** [Issues tab](https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/issues), with structured templates at [`.github/ISSUE_TEMPLATE/bug_report.md`](../.github/ISSUE_TEMPLATE/bug_report.md) and [`.github/ISSUE_TEMPLATE/feature_request.md`](../.github/ISSUE_TEMPLATE/feature_request.md)
 - **Social media** — [Cardano Token Lab X Account](https://x.com/CardanoTokenLab).
-- **Website feedback form** — [The Token Lab](https://thetokenlab.xyz).
+- **Website feedback form** — [The Token Lab Contact](https://thetokenlab.xyz/contact/).
+- **Catalyst Proposal Activity Tracker** - [CTEL Catalyst Proposal Activity Tracker](https://thetokenlab.xyz/catalyst-fund-11-proposal-activity-tracker/)
 
 ---
 

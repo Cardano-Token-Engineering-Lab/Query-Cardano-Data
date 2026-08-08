@@ -14,7 +14,7 @@ cp .env.example .env               # then fill in BLOCKFROST_API_TOKEN
 ## Before opening a pull request
 
 ```bash
-ruff check cardano_token_framework tests   # lint
+ruff check cardano_token_framework tests examples   # lint
 pytest --cov-report=term-missing            # tests + coverage
 ```
 
