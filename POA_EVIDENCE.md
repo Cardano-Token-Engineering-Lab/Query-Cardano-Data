@@ -3,7 +3,7 @@
 **Project:** Cardano Token Engineering Lab — Code Framework for Modeling Data Acquisition
 **Milestone:** Final Milestone
 **Repo:** https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data
-**Evidence captured:** run locally against commit `<INSERT COMMIT HASH AFTER PUSHING>` on `main`, reproducible by any reviewer via the commands shown below.
+**Evidence captured:** run locally against commit `0d73c96` on `main`, reproducible by any reviewer via the commands shown below.
 
 This document exists because the prior PoA submission linked to files that *implement* each acceptance criterion without showing that they actually *pass*. Every section below pairs the criterion with a command a reviewer can re-run themselves, plus the literal output captured when we ran it.
 
