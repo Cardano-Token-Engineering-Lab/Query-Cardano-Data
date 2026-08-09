@@ -135,4 +135,14 @@ def run_model(csv_path: Path = SAMPLE_CSV) -> pd.DataFrame:
 
 if __name__ == "__main__":
     result_df = run_model()
-    print(result_df[["timestep", "holder_sentiment", "cumulative_volume"]].to_string(index=False))
+    # cumulative_volume only accumulates (it's a running total), so the
+    # per-timestep change in it is exactly that day's swap volume — useful
+    # to see alongside the cumulative figure without re-deriving it by hand.
+    result_df["delta_volume"] = result_df["cumulative_volume"].diff().fillna(
+        result_df["cumulative_volume"]
+    )
+    print(
+        result_df[
+            ["timestep", "holder_sentiment", "cumulative_volume", "delta_volume"]
+        ].to_string(index=False)
+    )
