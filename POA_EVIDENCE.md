@@ -52,7 +52,7 @@ TOTAL                                                     288      0   100%
 ======================== 51 passed, 2 warnings in 1.33s ========================
 ```
 
-51 tests, **100% statement coverage** on the package. All tests run against mocked API clients (see [`tests/test_blockfrost_source.py`](../tests/test_blockfrost_source.py), [`tests/test_koios_source.py`](../tests/test_koios_source.py)) — no live network dependency, so this is fully reproducible offline.
+51 tests, **100% statement coverage** on the package. All tests run against mocked API clients (see [`tests/test_blockfrost_source.py`](tests/test_blockfrost_source.py), [`tests/test_koios_source.py`](tests/test_koios_source.py)) — no live network dependency, so this is fully reproducible offline.
 
 **Live evidence:** [CI Actions tab](https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/actions/workflows/ci.yml), `Test (pytest, with coverage)` step, run on every push across Python 3.10–3.12.
 

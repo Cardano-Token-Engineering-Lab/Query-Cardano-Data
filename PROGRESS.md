@@ -22,7 +22,7 @@ from.
 | Supporting docs for scripts to run | Done | `.env.example`, `CONTRIBUTING.md` |
 | Research + plan for a more robust solution (Dolos/Carp/Oura+Scrolls) | Done | `docs/indexing_roadmap.md` |
 | Linting | Done | `ruff`, enforced in CI |
-| Testing coverage | Done | 100% statement coverage, 49 tests, enforced in CI |
+| Testing coverage | Done | 100% statement coverage, 51 tests, enforced in CI |
 | Docstrings/comments | Done | every public function in `cardano_token_framework/` |
 | Enhanced README (usage + update handling) | Done | top-level `README.md` + `CONTRIBUTING.md` |
 | Code review / assurance process | Done | `CODE_REVIEW.md` |
