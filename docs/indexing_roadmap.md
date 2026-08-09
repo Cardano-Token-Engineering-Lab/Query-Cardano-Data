@@ -71,7 +71,8 @@ known-limitation flagged in `PROGRESS.md`.
 **Tradeoffs:** initial full sync takes multiple days per Carp's own
 documentation, and it requires running and maintaining a Postgres instance.
 Carp's task system is the main thing to learn here — most of the value over
-a from-scratch indexer is in that existing scaffolding.
+a from-scratch indexer is in that existing scaffolding. Another key tradeoff is that dcSpark
+is largely defunct and support for Carp is uncertain.
 
 ### 2.3 Oura + Scrolls (TxPipe)
 
@@ -133,7 +134,8 @@ since we already have its swap-batcher address) at the datum/redeemer
 level, replacing the net-asset-flow heuristic in `get_swaps` with ground
 truth. This directly resolves the swap-classification limitation called out
 in `PROGRESS.md`, and would let `get_swaps` report real swap amounts (in
-and out) instead of net token flow only.
+and out) instead of net token flow only. This could potentially be possible 
+with an Oura/Scrolls option as well.
 
 **Phase 4 (stretch, matches the milestone's own stretch goal): p2p and
 staking events.** Once a custom indexer (Carp or Scrolls) is in place, add

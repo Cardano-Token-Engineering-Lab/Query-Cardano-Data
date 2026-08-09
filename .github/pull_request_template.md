@@ -4,7 +4,7 @@
 
 ## Checklist
 
-- [ ] `ruff check cardano_token_framework tests` passes locally
+- [ ] `ruff check cardano_token_framework tests examples` passes locally
 - [ ] `pytest` passes locally with no drop in coverage (`pytest --cov-report=term-missing`)
 - [ ] New/changed functions have docstrings
 - [ ] README and/or `docs/` updated if behavior or usage changed
